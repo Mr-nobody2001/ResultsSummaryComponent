@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 350px) and (orientation: landscape) {
+  body {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 576px) and (min-height: 438px)  {
+  body {
+    padding: 0px;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 576px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    height: 555px;
+    min-width: 550px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 20px 20px 30px #c8c7ff80;
+    border-radius: 25px;
+  }
+}
+
+#FirstSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px 40px 40px 40px;
+  text-align: center;
+  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+  border-radius: 0px 0px 30px 30px;
+}
+
+@media (min-width: 576px) {
+  #FirstSection {
+    width: 50%;
+    padding: 35px 40px 50px 35px;
+    gap: 15px;
+    border-radius: 25px;
+  }
+}
+
+#Circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(to bottom, #4e21ca, #2421ca00);
+  border-radius: 100px;
+}
+
+@media (min-width: 576px) {
+  #Circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+#FirstSection p:first-of-type {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #c8c7ff;
+}
+
+@media (min-width: 576px) {
+  #FirstSection p:first-of-type {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+}
+
+#FirstSection p:nth-child(3) {
+  font-weight: 800;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media (min-width: 576px) {
+  #FirstSection p:nth-child(3) {
+    font-size: 2.3rem;
+  }
+}
+
+#FirstSection p:last-of-type {
+  font-weight: 500;
+  color: #c8c7ff;
+}
+
+@media (min-width: 576px) {
+  #FirstSection p:last-of-type {
+    font-size: 1.4rem;
+  }
+}
+
+#Circle p:first-of-type {
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+#Circle p:last-of-type {
+  font-weight: 700;
+  color: #c8c7ff;
+}
+
+#SecondSection {
+  color: #303b5a;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+}
+
+@media (min-width: 576px) {
+  #SecondSection {
+    justify-content: space-evenly;
+    width: 50%;
+    border-radius: 25px;
+  }
+}
+
+#SecondSection > p {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+@media (min-width: 576px) {
+  #SecondSection > p {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+#SecondSection > div {
+  font-weight: 500;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+@media (min-width: 576px) {
+  #SecondSection > div {
+    padding: 20px;
+  }
+}
+
+#SecondSection > div:first-of-type,
+div:nth-of-type(2) {
+  background-color: #ff57570f;
+}
+
+#SecondSection > div:nth-of-type(3),
+div:nth-of-type(4) {
+  background-color: #ebf1ff66;
+}
+
+#SecondSection > div:first-of-type > div {
+  color: #ff5757;
+}
+
+#SecondSection > div:nth-of-type(2) > div {
+  color: #ffb01f;
+}
+
+#SecondSection > div:nth-of-type(3) > div {
+  color: #00bd91;
+}
+
+#SecondSection > div:nth-of-type(4) > div {
+  color: #1125d4;
+}
+
+#SecondSection span {
+  color: #303b5a99;
+}
+
+#SecondSection > div > div {
+  display: flex;
+  flex-direction: row;
+}
+
+#SecondSection > div > div > img {
+  margin-right: 15px;
+}
+
+#SecondSection > button {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #303b5a;
+  border: none;
+  outline: none;
+}
+
+@media (min-width: 576px) {
+  #SecondSection > button {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  #SecondSection > button:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, #7857ff, #2e2be9);
+  }
+}
